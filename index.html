@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Haider Ali</title>
+  <link rel="icon" type="image/png" href="img/workshop.png" />
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Saira+Extra+Condensed:wght@500;700&family=Muli:wght@400;800&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Muli', sans-serif;
+      scroll-behavior: smooth;
+    }
+
+    /* SIDE NAV */
+    #sideNav {
+      width: 250px;
+      height: 100vh;
+      background: black;
+      position: fixed;
+      top: 0;
+      left: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-top: 20px;
+      color: white;
+    }
+
+    #sideNav img {
+      width: 180px;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 50%;
+    }
+
+    #sideNav ul {
+      list-style: none;
+      padding: 0;
+      width: 100%;
+      margin-top: 20px;
+    }
+
+    #sideNav ul li a {
+      display: block;
+      padding: 12px 20px;
+      color: white;
+      text-decoration: none;
+      font-size: 18px;
+      font-family: 'Saira Extra Condensed', sans-serif;
+      font-weight: 700;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+    }
+
+    #sideNav ul li a:hover {
+      background: rgba(255, 255, 255, 0.2);
+    }
+
+    /* CONTENT */
+    .container {
+      margin-left: 270px;
+      padding: 40px;
+    }
+
+    section {
+      margin-bottom: 80px;
+    }
+
+    h1, h2 {
+      font-family: 'Saira Extra Condensed', sans-serif;
+      font-weight: 700;
+    }
+
+    .subheading {
+      font-size: 18px;
+      margin-bottom: 20px;
+    }
+
+    .social-icons a {
+      font-size: 24px;
+      margin-right: 15px;
+      color: #007bff;
+      text-decoration: none;
+    }
+
+    /* Simple font-awesome replacement icons */
+    .icon {
+      display: inline-block;
+      width: 20px;
+      height: 20px;
+      background: black;
+      border-radius: 3px;
+      margin-right: 8px;
+    }
+
+    ul.dev-icons li {
+      display: inline-block;
+      margin-right: 15px;
+      font-size: 22px;
+    }
+
+    .fa-ul {
+      list-style: none;
+      padding-left: 20px;
+    }
+
+    .fa-li {
+      margin-right: 10px;
+      color: gold;
+    }
+
+    @media (max-width: 900px) {
+      #sideNav {
+        position: relative;
+        width: 100%;
+        height: auto;
+        flex-direction: row;
+        justify-content: space-around;
+      }
+
+      #sideNav ul {
+        display: flex;
+        flex-direction: row;
+        overflow-x: auto;
+      }
+
+      .container {
+        margin-left: 0;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- SIDE NAVIGATION -->
+  <nav id="sideNav">
+    <img src="./img/portfolio.jpeg" alt="Profile Image" />
+    <ul>
+      <li><a href="#about">Profile</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#education">Academia</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#interests">Interests</a></li>
+      <li><a href="#awards">Achievements</a></li>
+    </ul>
+  </nav>
+
+  <div class="container">
+
+    <!-- ABOUT -->
+    <section id="about">
+      <h1>Haider Ali</h1>
+      <div class="subheading">
+        (+92) 330-1291877<br>
+        <a href="mailto:haide.4r786@gmail.com">haide.4r786@gmail.com</a>
+      </div>
+      <p class="lead">My name is Haider Ali. I am from Lahore, and I am a student at FAST-NUCES Peshawar.</p>
+
+      <div class="social-icons">
+        <a href="https://github.com/haiderali0556">GitHub</a>
+        <a href="https://twitter.com/chHaider56">Twitter</a>
+        <a href="https://www.facebook.com/haider-ejaz">Facebook</a>
+        <a href="https://www.instagram.com/haide.r7090">Instagram</a>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section id="experience">
+      <h2>Experience</h2>
+      <h3>Internee</h3>
+      <div class="subheading">Computer Society</div>
+      <p>Learning C/C++</p>
+      <p><strong>May 2025 - Present</strong></p>
+    </section>
+
+    <!-- EDUCATION -->
+    <section id="education">
+      <h2>Education</h2>
+      <h3>FAST PWR</h3>
+      <p class="subheading">Software Engineering</p>
+      <p><strong>Aug 2025 - Aug 2029</strong></p>
+
+      <h3>Degree Associate College Lahore</h3>
+      <p class="subheading">Engineering</p>
+      <p><strong>Aug 2023 - Aug 2025</strong></p>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills">
+      <h2>Skills</h2>
+      <ul class="dev-icons">
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>GitHub</li>
+        <li>WordPress</li>
+      </ul>
+    </section>
+
+    <!-- INTERESTS -->
+    <section id="interests">
+      <h2>Interests & Hobbies</h2>
+      <ul>
+        <li>Watching Movies</li>
+        <li>Hanging Out with Friends</li>
+        <li>E-sports</li>
+        <li>Cricket</li>
+      </ul>
+    </section>
+
+    <!-- AWARDS -->
+    <section id="awards">
+      <h2>Awards & Certifications</h2>
+      <ul>
+        <li>Got 3rd position in KIPS Test Session</li>
+        <li>Won class cricket at school competition</li>
+      </ul>
+    </section>
+
+  </div>
+
+</body>
+</html>
